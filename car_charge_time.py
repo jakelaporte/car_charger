@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 
 
 st.title("LaPorte Charging Instructions")
-current_datetime = datetime.now()
+current_datetime = datetime.now(ZoneInfo("US/Central"))
 current_time = current_datetime.time()
 
 with st.container(border=True):
